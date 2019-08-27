@@ -1,0 +1,63 @@
+#projects-banner{
+    height: 500px;
+    overflow: hidden;
+}
+
+#projects-banner:after{
+    content: '';
+    width: 110%;
+    height: 100px;
+    left: -20px;
+    bottom: -50px;
+    position: absolute;
+    transform: rotate(2deg);
+    z-index: 100;
+    background-color: #fff;
+}
+
+#projects-banner .icon-previous{
+    top: 16px;
+    right: 16px;
+    position: absolute;
+    color: #fff;
+    font-size: 32px;
+    z-index: 200;
+    transition: all 0.3s ease;
+}
+
+#projects-banner .icon-previous:hover{
+    color: #000;
+}
+
+#projects-banner .content{
+    z-index: 3;
+}
+
+#projects-banner .container-shapes{
+    width: 100%;
+    height: calc(100% + 70px);
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#projects-banner .shape{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border: solid 2px #B38DFF;
+}
+
+#projects-banner div.shape:nth-of-type(even){
+    top: -170px;
+    left: -90px;
+    transform: rotate(190deg);
+}
+
+#projects-banner div.shape:nth-of-type(odd){
+    bottom: -200px;
+    right: 10px;
+    transform: rotate(60deg);
+}

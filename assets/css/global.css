@@ -1,0 +1,235 @@
+/* Hide scrollbars. */
+::-webkit-scrollbar {width: 0 !important;}
+*{-ms-overflow-style: none; overflow: -moz-scrollbars-none;}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+ul.with-bullets{
+    list-style: inside;
+}
+
+header.mainnav{height: 74px;}
+
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 900;
+    background-color: #fff;
+}
+
+nav:after{
+    content: '';
+    clear: both;
+}
+
+nav .logo{
+    padding: 16px 24px;
+    float: left;
+    color: #000;
+    font-size: 32px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+textarea{resize: none;}
+
+nav .logo:hover{color: #A071FF;}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 22px 18px 23px 18px;
+    display: block;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li.active a{color: #A071FF;}
+nav ul li.active a:hover{color: #B38DFF;}
+
+.footer-push{
+    width: 100%;
+    flex-grow: 1;
+}
+
+footer{
+    background-color: #333;
+}
+
+footer .copyright{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-bordered{
+    padding: 24px 48px;
+    display: inline-block;
+    color: #9065E5;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 2px solid #9065E5;
+    transition: all 0.3s ease;
+}
+
+.btn-bordered:hover, .btn-bordered:active{
+    color: #fff;
+    background-color: #9065E5;
+}
+
+.btn-bordered.btn-color-white{
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-bordered.btn-color-white:hover, .btn-bordered.btn-color-white:active{
+    color: #000;
+    background-color: #fff;
+}
+
+.project-row{
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 0;
+}
+
+.project-card{
+    margin: 0px auto 24px auto !important;
+    overflow: hidden;
+}
+
+.project-card .project-wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-decoration: none;
+}
+
+.project-card .project-wrapper:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    background-color: #000;
+    transition: all 0.35s ease;
+}
+
+.project-card .project-wrapper:hover:before{
+    opacity: 0.3;
+}
+
+.project-card .project-wrapper:hover .thumbnail .logo{
+    transform: scale(1.1, 1.1);
+}
+
+.project-card .project-wrapper .info{
+    padding: 12px 14px;
+    flex-grow: 1;
+    color: #fff;
+    background-color: #333;
+    z-index: 3;
+}
+
+.project-card .project-wrapper .thumbnail{
+    padding: 200px 24px;
+    background-color: #a071ff;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-card .project-wrapper .thumbnail:before, .project-card .project-wrapper .thumbnail:after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border: solid 2px #B38DFF;
+}
+
+.project-card .project-wrapper .thumbnail:before{
+    top: -170px;
+    left: -90px;
+    transform: rotate(190deg);
+}
+
+.project-card .project-wrapper .thumbnail:after{
+    bottom: -200px;
+    right: 10px;
+    transform: rotate(60deg);
+}
+
+.project-card .project-wrapper .thumbnail .logo{
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+    z-index: 4;
+    transition: all 0.35s ease;
+}
+
+.project-card .project-wrapper .info p{
+    font-weight: 100;
+}
+
+.project-card .project-wrapper .info p.title{
+    font-weight: 500;
+}
+
+#form-contact{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+#form-contact .info{
+    margin-bottom: 28px;
+    padding-left: 12px;
+    color: #fff;
+}
+
+#form-contact button[type="submit"]{
+    float: right;
+}
+
+#form-contact input, #form-contact textarea{
+    margin-bottom: 20px;
+}
+
+#page-notfound{
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#page-notfound a{
+    color: #000;
+    text-decoration: none;
+}
