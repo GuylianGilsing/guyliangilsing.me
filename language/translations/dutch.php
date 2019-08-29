@@ -13,6 +13,7 @@
         'technologies' => "Technologiën",
         'features' => "Functionaliteiten",
         'more-pictures' => "Meer foto's",
+        'about-me' => "Over mij",
 
         // Home page.
         'home-banner-welcome' => "Hey!, leuk om je te ontmoeten!",
@@ -30,6 +31,12 @@
         'form-message' => "Bericht",
         'form-optional' => "(niet verplicht)",
         'form-send' => "Verzenden",
+
+        // Form errors.
+        'form-firstname-error' => "Geen voornaam ingevuld.",
+        'form-lastname-error' => "Geen achternaam ingevuld",
+        'form-emailaddress-error' => "Geen email adres ingevuld",
+        'form-subject-error' => "Geen onderwerp ingevuld",
 
         // Projects info.
         'cryptomania-shortdetails' => "Simpele website met API integratie.",

@@ -13,6 +13,7 @@
         'technologies' => "Technologies",
         'features' => "Features",
         'more-pictures' => "More pictures",
+        'about-me' => "About me",
 
         // Home page.
         'home-banner-welcome' => "Hi there, nice to meet you!",
@@ -30,6 +31,12 @@
         'form-message' => "Message",
         'form-optional' => "(optional)",
         'form-send' => "Send",
+
+        // Form errors.
+        'form-firstname-error' => "No firstname given.",
+        'form-lastname-error' => "No lastname given.",
+        'form-emailaddress-error' => "No valid email address given.",
+        'form-subject-error' => "No subject given.",
 
         // Projects info.
         'cryptomania-shortdetails' => "Simple website using an API",

@@ -200,6 +200,7 @@ footer .copyright{
 }
 
 #form-contact{
+    min-height: 732px;
     max-width: 750px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -232,4 +233,12 @@ footer .copyright{
 #page-notfound a{
     color: #000;
     text-decoration: none;
+}
+
+#component-contact{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
 }
