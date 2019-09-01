@@ -61,3 +61,24 @@
     right: 10px;
     transform: rotate(60deg);
 }
+
+@media only screen and (max-width: 900px){
+    #projects-banner .shape{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border: solid 2px #B38DFF;
+    }
+    
+    #projects-banner div.shape:nth-of-type(even){
+        top: -50px;
+        left: -50px;
+        transform: rotate(190deg);
+    }
+    
+    #projects-banner div.shape:nth-of-type(odd){
+        bottom: -50px;
+        right: 10px;
+        transform: rotate(60deg);
+    }
+}

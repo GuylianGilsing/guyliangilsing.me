@@ -373,6 +373,7 @@ footer .copyright{
 
     div.project-card{
         margin-bottom: 32px !important;
+        padding: 0px;
     }
 }
 

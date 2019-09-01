@@ -1,6 +1,6 @@
 <?php require_once(dirname(__FILE__).'/inc/header.php'); ?>
 <div id="projects-banner" class="vertical-center txt-color-white bg-color-purple">
-    <div>
+    <div class="content">
         <h1><?php echo $_GET['translation']['projects']; ?></h1>
     </div>
     <div class="container-shapes">
