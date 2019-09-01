@@ -50,8 +50,9 @@
             </a>
         </div>
     </div>
-    <div class="col-100 text-center indent-small">
-        <a href="<?php echo RelativeURL('/projects'); ?>" class="btn-bordered text-center"><?php echo $_GET['translation']['btn-more_projects']; ?></a>
+    <div class="clear"></div>
+    <div class="col-100 text-center indent-small-bottom">
+        <a href="<?php echo RelativeURL('/projects'); ?>" class="btn-bordered"><?php echo $_GET['translation']['btn-more_projects']; ?></a>
     </div>
 </section>
 <?php require_once(dirname(__FILE__).'/components/contact.php'); ?>

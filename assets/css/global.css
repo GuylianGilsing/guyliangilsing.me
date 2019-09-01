@@ -39,6 +39,16 @@ nav .logo{
     transition: all 0.3s ease;
 }
 
+header.mainnav nav .mobile-icon{
+    padding: 20px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 32px;
+}
+
 textarea{resize: none;}
 
 nav .logo:hover{color: #A071FF;}
@@ -47,21 +57,52 @@ nav ul{
     float: right;
 }
 
-nav ul li{
+nav ul:not(.dropdown-items) li{
     display: inline-block;
 }
 
-nav ul li a{
+nav ul li a, nav ul li.dropdown p.title{
     padding: 22px 18px 23px 18px;
     display: block;
     color: #000;
     font-size: 24px;
+    font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover, nav ul li.active a{color: #A071FF;}
 nav ul li.active a:hover{color: #B38DFF;}
+
+nav ul li.dropdown{
+    position: relative;
+}
+
+nav ul li.dropdown .icon-down{
+    margin-left: 8px;
+}
+
+nav ul li.dropdown:hover ul.dropdown-items{
+    opacity: 1;
+    pointer-events: all;
+}
+
+nav ul li.dropdown ul.dropdown-items{
+    top: 60px;
+    right: 0px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #fff;
+}
+
+nav ul li.dropdown ul.dropdown-items li{
+    display: block;
+}
+
+nav ul li.dropdown ul.dropdown-items li a{
+    padding: 12px 18px;
+}
 
 .footer-push{
     width: 100%;
@@ -99,6 +140,7 @@ footer .copyright{
 .btn-bordered.btn-color-white{
     color: #fff;
     border-color: #fff;
+    background-color: transparent;
 }
 
 .btn-bordered.btn-color-white:hover, .btn-bordered.btn-color-white:active{
@@ -113,7 +155,7 @@ footer .copyright{
 }
 
 .project-card{
-    margin: 0px auto 24px auto !important;
+    margin: 0px auto 70px auto !important;
     overflow: hidden;
 }
 
@@ -241,4 +283,111 @@ footer .copyright{
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+}
+
+@media only screen and (max-width: 967px){
+    nav > ul{
+        width: 100%;
+        height: 100vh;
+        padding-top: 69px;
+        padding-left: 24px;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        z-index: -1;
+        background-color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    nav > ul:not(.mobile-open){
+        left: 100%;
+    }
+
+    header.mainnav nav .mobile-icon{
+        opacity: 1;
+        pointer-events: all;
+        transition: all 0.3s ease;
+    }
+
+    ul.mobile-open + i.mobile-icon{
+        color: #A071FF;
+    }
+    
+    nav ul:not(.dropdown-items) li{
+        display: block;
+    }
+    
+    nav ul li a, nav ul li.dropdown p.title{
+        padding: 16px 18px 16px 0px;
+        display: block;
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    nav ul li a:hover, nav ul li.active a{color: #A071FF;}
+    nav ul li.active a:hover{color: #B38DFF;}
+    
+    nav ul li.dropdown{
+        position: relative;
+    }
+    
+    nav ul li.dropdown .icon-down{
+        display: none;
+    }
+    
+    nav ul li.dropdown ul.dropdown-items{
+        position: static;
+        display: block;
+        float: none;
+        opacity: 1;
+        pointer-events: all;
+        border-left: solid 2px #EAEAEA;
+    }
+
+    nav ul li.dropdown p.title{
+        margin: 0px;
+    }
+    
+    nav ul li.dropdown ul.dropdown-items li{
+        display: block;
+    }
+    
+    nav ul li.dropdown ul.dropdown-items li a{
+        padding: 12px 18px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .indent-small{padding-top: 16px;padding-bottom: 16px;}
+    .indent-small-top{padding-top: 16px;}
+    .indent-small-bottom{padding-bottom: 16px;}
+    .indent-medium{padding-top: 35px;padding-bottom: 35px;}
+    .indent-medium-top{padding-top: 35px;}
+    .indent-medium-bottom{padding-bottom: 35px;}
+    .indent-large{padding-top: 85px;padding-bottom: 85px;}
+    .indent-large-top{padding-top: 85px;}
+    .indent-large-bottom{padding-bottom: 85px;}
+
+    div.project-card{
+        margin-bottom: 32px !important;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .indent-small{padding-top: 8px;padding-bottom: 8px;}
+    .indent-small-top{padding-top: 8px;}
+    .indent-small-bottom{padding-bottom: 8px;}
+    .indent-medium{padding-top: 16px;padding-bottom: 16px;}
+    .indent-medium-top{padding-top: 16px;}
+    .indent-medium-bottom{padding-bottom: 16px;}
+    .indent-large{padding-top: 42px;padding-bottom: 42px;}
+    .indent-large-top{padding-top: 42px;}
+    .indent-large-bottom{padding-bottom: 42px;}
+
+    div.project-card{
+        margin-bottom: 32px !important;
+    }
 }

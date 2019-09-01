@@ -3,7 +3,6 @@
         '/projects',
         '/project/cryptomania',
         '/project/drakenvanger',
-        '/project/eftelinfo',
         '/project/fluidify',
         '/project/mt-unirepair',
     ];
@@ -26,9 +25,26 @@
             <li <?php echo AddActiveClass(['/contact']); ?>>
                 <a href="<?php echo RelativeURL('/contact'); ?>"><?php echo $_GET['translation']['contact']; ?></a>
             </li>
-            <ul class="dropdown">
-                <p class="title">Language</p>
-            </ul>
+            <li class="dropdown">
+                <p class="title"><?php echo $_GET['translation']['language']; ?><i class="icon-down fas fa-caret-down"></i></p>
+                <ul class="dropdown-items">
+                    <?php
+                        foreach($_GET['languages'] as $language)
+                        {
+                            $active = "";
+
+                            if($language['short'] == $_GET['lang'])
+                                $active = ' class="active"';
+
+                            if($language['short'] != $_GET['default_lang'])
+                                echo '<li'.$active.'>'.'<a href="'.ServerBase().'/'.$language['short'].$_GET['page'].'">'.$language['title'].'</a>'.'</li>';
+                            else
+                                echo '<li'.$active.'>'.'<a href="'.ServerBase().$_GET['page'].'">'.$language['title'].'</a>'.'</li>';
+                        }
+                    ?>
+                </ul>
+            </li>
         </ul>
+        <i class="mobile-icon fas fa-bars"></i>
     </nav>
 </header>

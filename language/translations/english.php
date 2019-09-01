@@ -14,10 +14,11 @@
         'features' => "Features",
         'more-pictures' => "More pictures",
         'about-me' => "About me",
+        'language' => "Language",
 
         // Home page.
         'home-banner-welcome' => "Hi there, nice to meet you!",
-        'home-banner-welcome_sub' => "My name is Guylian Gilsing, i'm a 18 year old student in application development where I specialize myself in backend web development.<br/><br/>I use my knowledge and skills to realize any idea into a beautiful app or website.",
+        'home-banner-welcome_sub' => "My name is Guylian Gilsing, i'm a 18 year old student in application development where I specialize myself in fullstack web development.<br/><br/>I use my knowledge and skills to realize any idea into a beautiful app or website.",
 
         // Contact form.
         'contactform-title' => "Contact form",
@@ -77,4 +78,10 @@
             'Plugins.',
             'Themes.',
         ],
+
+        // MT Unirepair.
+        'mtunirepair-theproject' => "MT Unirepair was a project I've made for <a href='https://influid.nl' target='_BLANK' class='txt-color-black'>Influid Creative Digital Agency</a>. Influid gave me a design that I needed to code in HTML and CSS. The end product also has some PHP code to make the page temporary.",
+            
+        'mail-success' => "Mail has been sent.",
+        'mail-failed' => "Mail could not be send, please try again later.",
     ];

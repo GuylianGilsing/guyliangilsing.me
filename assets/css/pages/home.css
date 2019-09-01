@@ -6,6 +6,7 @@
     justify-content: center;
     margin-bottom: 15px;
     position: relative;
+    overflow: hidden;
 }
 
 #home-hero_welcome:after{
@@ -81,4 +82,32 @@
     position: absolute;
     transform: rotate(2deg);
     background-color: #a071ff;
+}
+
+@media only screen and (max-width: 1250px){
+    #home-hero_welcome .content img.me{
+        right: -20px;
+    }
+}
+
+@media only screen and (max-width: 1004px){
+    #home-hero_welcome .content img.me{
+        top: 20px;
+        right: -40px;
+        max-width: 340px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #home-hero_welcome{
+        padding: 50px 10px;
+    }
+
+    #home-hero_welcome .col-50{
+        width: 100%;
+    }
+
+    #home-hero_welcome .content img.me{
+        display: none;
+    }
 }

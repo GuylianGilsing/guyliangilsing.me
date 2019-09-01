@@ -14,10 +14,11 @@
         'features' => "Functionaliteiten",
         'more-pictures' => "Meer foto's",
         'about-me' => "Over mij",
+        'language' => "Taal",
 
         // Home page.
         'home-banner-welcome' => "Hey!, leuk om je te ontmoeten!",
-        'home-banner-welcome_sub' => "Mijn naam is Guylian Gilsing, ik ben een 18 jarige student die zich specialiseerd in backend web development.<br/><br/>Ik gebruik mijn kennis en skills om elk idee om te zetten in een practige applicatie of website.",
+        'home-banner-welcome_sub' => "Mijn naam is Guylian Gilsing, ik ben een 18 jarige student die zich specialiseerd in fullstack web development.<br/><br/>Ik gebruik mijn kennis en skills om elk idee om te zetten in een practige applicatie of website.",
 
         // Contact form.
         'contactform-title' => "Contact formulier",
@@ -77,4 +78,10 @@
             'Plugins.',
             'Thema\'s.',
         ],
+
+        // MT Unirepair.
+        'mtunirepair-theproject' => "MT Unirepair was een opdracht die ik gemaakt heb voor <a href='https://influid.nl' target='_BLANK' class='txt-color-black'>Influid Creative Digital Agency</a>. Influid heeft mij het ontwerp aangeleverd voor een tijdelijke homepage, ik heb dit ontwerp gerealiseerd in HTML en CSS. Het eindresultaat is een volledige responsive webpagina, ook is PHP in de code verwerkt om de pagina tijdelijk te maken.",
+        
+        'mail-success' => "E-mail is verzonden.",
+        'mail-failed' => "E-mail kon niet verzonden worden, probeer het later nog eens.",
     ];

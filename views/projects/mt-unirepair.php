@@ -16,11 +16,7 @@
     <div class="col-50 col-m-100 col-s-100 col-xs-100">
         <h4><?php echo $_GET['translation']['the-project']; ?></h4>
         <p>
-            <?php //echo $_GET['translation']['mtunirepair-theproject']; ?>
-            MT Unirepair was een opdracht die ik gemaakt heb voor 
-            <a href='https://influid.nl' target='_BLANK' class='txt-color-black'>Influid Creative Digital Agency</a>.
-            Influid heeft mij het ontwerp aangeleverd voor een tijdelijke homepage, ik heb dit ontwerp gerealiseerd in HTML en CSS. 
-            Het eindresultaat is een volledige responsive webpagina, ook is PHP in de code verwerkt om de pagina tijdelijk te maken.
+            <?php echo $_GET['translation']['mtunirepair-theproject']; ?>
         </p>
     </div>
     <div class="col-50 col-m-100 col-s-100 col-xs-100">

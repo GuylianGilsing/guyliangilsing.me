@@ -12,8 +12,16 @@
     // Create all of the URL variables.
     ConstructUrlVars($app_language_config);
 
-    // Require the translations.
+    // Require the translations and put all availlable languages in a $_GET variable.
     require_once($app_language_config[$_GET['lang']]['file']);
+    $_GET['languages'] = [];
+    foreach($app_language_config as $lang => $config)
+    {
+        if($lang != "default")
+            $_GET['languages'][] = ['title' => $config['title'], 'short' => $lang];
+        else
+            $_GET['default_lang'] = $config;
+    }
 
     // Create important objects.
     $contentLoader = new ContentLoader();
@@ -23,6 +31,7 @@
     require_once(dirname(__FILE__).'/router.php');
 
     // Match the route parameters to the current $_GET['page'] value.
+    StartSession();
 
     if(isset($app_routes[$_GET['page']]))
     {
