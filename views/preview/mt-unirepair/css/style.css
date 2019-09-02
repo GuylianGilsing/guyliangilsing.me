@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+/* 
+
+    --- Global ---
+
+*/
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+h1{
+    margin: 0px;
+    margin-bottom: 12px;
+    font-size: 64px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+p{
+    margin: 0px;
+    color: #263749;
+    font-size: 20px;
+}
+
+h1 span{font-weight: 500;}
+h1, .font-bold{color: #263749; font-weight: bold;}
+
+p, .btn{
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: #00aced;
+}
+
+/* 
+
+    --- Custom styling ---
+
+*/
+
+#banner-home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner-content{
+    padding-left: 100px;
+    max-width: 900px;
+    margin-bottom: 150px;
+    overflow: hidden;
+}
+
+.logo-corner_bottom{
+    right: 90px;
+    bottom: 50px;
+    position: absolute;
+    font-size: 30px;
+}
+
+/* 
+
+    --- Logo + circle ---
+
+*/
+
+#banner-home:before{
+    content: '';
+    width: 100vw;
+    height: 200vh;
+    top: -50%;
+    left: -65%;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #263749;
+}
+
+.logo{
+    width: 200px;
+    height: 250px;
+    top: 40%;
+    left: 10%;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1370px){
+    .logo{left: 6%;}
+    h1{font-size: 42px;}
+    p{font-size: 19px;}
+}
+
+@media only screen and (max-width: 960px){
+    body, html{
+        max-height: unset;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    h1{font-size: 42px;}
+    .btn{font-size: 22px;}
+
+    #banner-home{
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        display: block;
+    }
+
+    #banner-content{
+        width: 100%;
+        margin: 0px 0px 40px 0px;
+        padding: 0px 10%;
+    }
+
+    #banner-home:before{
+        width: 200vw;
+        height: 850px;
+        top: -550px;
+        left: -50%;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #263749;
+    }
+    
+    .logo{
+        width: 150px;
+        max-width: 100%;
+        margin: 60px auto 120px auto;
+        position: unset;
+    }
+
+    .logo-corner_bottom{
+        padding: 0px 20px;
+        margin: 20px auto;
+        position: unset;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    h1{font-size: 36px;}
+    .btn{font-size: 22px;}
+    p{font-size: 18px;}
+
+    .logo{margin-bottom: 90px;}
+
+    #banner-content{
+        padding: 20px;
+        text-align: center;
+    }
+}
