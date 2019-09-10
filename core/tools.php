@@ -135,3 +135,66 @@
         if(isset($_POST['404']) == false)
             return $output;
     }
+
+    /*
+    
+        --- CSRF protection ---
+    
+    */
+
+    /**
+     * Generates and registers a CSRF token.
+     * @return string Returns the token that is registered.
+     */
+    function CSRF_GEN_TOKEN()
+    {
+        // Make sure that a session can be created.
+        if(session_status() == PHP_SESSION_DISABLED)
+            die("Please enable session functionality for CSRF protection.");
+
+        // Start a session.
+        if(session_status() == PHP_SESSION_NONE)
+            session_start();
+
+        // Generate a random token.
+        $token = bin2hex(random_bytes(32));
+
+        $_SESSION['validatetoken'] = $token;
+
+        return $token;
+    }
+
+    /**
+     * Generates a form input with the CSRF token applied to it.
+     * @param string $token The generated token from the CRSF() function.
+     */
+    function CSRF_FIELD($token)
+    {
+        echo '<input type="hidden" id="form-csrf" name="csrf" value="'.$token.'">';
+    }
+
+    /**
+     * Validates a given CSRF token.
+     * @param string $token A generated token.
+     * @return bool Returns true on a valid token, but false on a invalid token.
+     */
+    function CSRF_VALIDATE($token)
+    {
+        $validToken = false;
+
+        // Make sure that a session can be created.
+        if(session_status() == PHP_SESSION_DISABLED)
+            die("Please enable session functionality for CSRF protection.");
+
+        // Start a session.
+        if(session_status() == PHP_SESSION_NONE)
+            session_start();
+
+        if(isset($_SESSION['validatetoken']))
+            $validToken = hash_equals($_SESSION['validatetoken'], $token);
+
+        if($validToken)
+            unset($_SESSION['validatetoken']);
+        
+        return $validToken;
+    }

@@ -2,6 +2,10 @@
     // Capture the contact submit event, this get's checked before the form get's loaded.
     if(isset($_POST['contact-submit']) && $_POST['contact-submit'] == "form")
     {
+        // Validate the CSRF token.
+        if(isset($_POST['csrf']) == false || CSRF_VALIDATE($_POST['csrf']))
+            RedirectRelative('/mail/failed');   
+
         // Will hold the empty field names, these will be put into a session to later check for errors.
         $emptyFields = [];
 

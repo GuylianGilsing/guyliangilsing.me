@@ -4,6 +4,9 @@
             <h1><?php echo $_GET['translation']['contactform-title']; ?></h1>
             <p><?php echo $_GET['translation']['contactform-info']; ?></p>
         </div>
+        <?php
+            CSRF_FIELD(CSRF_GEN_TOKEN());
+        ?>
         <div class="form-field col-50 col-s-100 col-xs-100">
             <?php
                 if(isset($_SESSION['contact-form-errors']['contact-firstname']) && $_SESSION['contact-form-errors']['contact-firstname'] == "empty")
