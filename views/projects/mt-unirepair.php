@@ -19,10 +19,9 @@
             <?php echo $_GET['translation']['mtunirepair-theproject']; ?>
         </p>
     </div>
-    <div class="col-50 col-m-100 col-s-100 col-xs-100">
+    <div class="col-50 col-m-100 col-s-100 col-xs-100 indent-small">
         <img src="<?php echo ServerBase(); ?>/assets/img/projects/mt-unirepair/design.jpg" alt="">    
     </div>
-    <div class="clear"></div>
 </section>
 <div class="footer-push"></div>
 <?php require_once(dirname(__FILE__).'/../inc/footer.php'); ?>

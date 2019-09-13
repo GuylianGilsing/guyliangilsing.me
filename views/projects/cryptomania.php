@@ -19,12 +19,10 @@
     <div class="col-50 col-m-100 col-s-100 col-xs-100">
         <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-homepage.png" alt="Cryptomania homepage">
     </div>
-    <div class="clear-100"></div>
-    <div class="container text-center">
+    <div class="indent-large container text-center">
         <h2><?php echo $_GET['translation']['technologies']; ?></h2>
         <p><?php echo $_GET['translation']['cryptomania-technologies']; ?></p>
     </div>
-    <div class="clear-100"></div>
     <div class="col-50 col-m-100 col-s-100 col-xs-100">
         <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-coininfo.png" alt="Cryptomania homepage">
     </div>
@@ -44,23 +42,26 @@
             ?>
         </ul>
     </div>
-    <div class="clear-100"></div>
-    <h2 class="text-center"><?php echo $_GET['translation']['more-pictures']; ?></h2>
-    <div class="col-1-3 col-m-50 col-s-100 col-xs-100">
-        <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-homepage-loggedin.png" alt="">
-        <div class="clear-20"></div>
-    </div>
-    <div class="col-1-3 col-m-50 col-s-100 col-xs-100">
-        <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-news.png" alt="">
-        <div class="clear-20"></div>
-    </div>
-    <div class="col-1-3 col-m-50 col-s-100 col-xs-100">
-        <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-portfolio.png" alt="">
-        <div class="clear-20"></div>
-    </div>
-    <div class="col-1-3 col-m-50 col-s-100 col-xs-100">
-        <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-coininfo-loggedin.png" alt="">
-        <div class="clear-20"></div>
+    <div class="clear"></div>
+    <div class="wrapper indent-small">
+        <h2 class="text-center"><?php echo $_GET['translation']['more-pictures']; ?></h2>
+        <div class="clear-15"></div>
+        <div class="col-1-3 col-m-50 col-s-100 col-xs-100">
+            <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-homepage-loggedin.png" alt="">
+            <div class="clear-20"></div>
+        </div>
+        <div class="col-1-3 col-m-50 col-s-100 col-xs-100">
+            <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-news.png" alt="">
+            <div class="clear-20"></div>
+        </div>
+        <div class="col-1-3 col-m-50 col-s-100 col-xs-100">
+            <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-portfolio.png" alt="">
+            <div class="clear-20"></div>
+        </div>
+        <div class="col-1-3 col-m-50 col-s-100 col-xs-100">
+            <img src="<?php echo ServerBase(); ?>/assets/img/projects/cryptomania/cryptomania-coininfo-loggedin.png" alt="">
+            <div class="clear-20"></div>
+        </div>
     </div>
 </section>
 <div class="footer-push"></div>

@@ -36,8 +36,7 @@
             ?>
         </ul>
     </div>
-    <div class="clear-35"></div>
-    <div class="col-100">
+    <div class="col-100 indent-small">
         <img src="<?php echo ServerBase(); ?>/assets/img/projects/drakenvanger/drakenvanger.png" alt="">
     </div>
 </section>
