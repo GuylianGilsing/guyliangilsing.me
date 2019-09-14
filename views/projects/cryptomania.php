@@ -1,9 +1,11 @@
 <?php require_once(dirname(__FILE__).'/../inc/header.php'); ?>
 <div id="projects-banner" class="vertical-center text-center txt-color-white bg-color-purple">
     <a href="<?php echo RelativeURL('/projects'); ?>" class="icon-previous"><i class="far fa-arrow-alt-circle-left"></i></a>    
-    <div>
+    <div class="content">
         <h1>Cryptomania</h1>
         <p><?php echo $_GET['translation']['cryptomania-shortdetails']; ?></p>
+        <div class="clear-20"></div>
+        <a href="http://cryptomania.guyliangilsing.me" target="_BLANK" class="text-center btn-bordered btn-color-white">Project Preview</a>
     </div>
     <div class="container-shapes">
         <div class="shape"></div>
