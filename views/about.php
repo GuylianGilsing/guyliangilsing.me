@@ -9,11 +9,25 @@
     </div>
 </div>
 <section class="indent-medium">
-    <div class="col-50 col-s-100 col-xs-100">
-        
-    </div>
-    <div class="col-50 col-s-100 col-xs-100">
-
+    <div class="container">
+        <div class="col-50 col-s-100 col-xs-100 indent-left-5">
+            <h3>My knowledge </h3>
+            <p>
+                This list displays all of the languages and frameworks that I have worked with. 
+                There is basic knowledge in all these items and I'm able to use these languages 
+                and frameworks to built almost anything I want.
+            </p>
+        </div>
+        <div class="col-50 col-s-100 col-xs-100 indent-left-10">
+            <ul class="with-bullets">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Laravel</li>
+            </ul>
+        </div>
     </div>
 </section>
 <div class="footer-push"></div>
