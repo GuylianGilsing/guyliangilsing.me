@@ -243,6 +243,8 @@ footer .copyright{
     font-weight: 500;
 }
 
+/* Contact component. */
+
 #form-contact{
     min-height: 732px;
     max-width: 750px;
@@ -286,6 +288,38 @@ footer .copyright{
     justify-content: center;
     flex-grow: 1;
 }
+
+/* Testimonials component. */
+
+#component-testimonials{
+    padding-top: 20px;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#component-testimonials .notfound-message{
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial-card{
+    padding: 0px 12px;
+}
+
+.testimonial-card .message{
+    margin: 6px 0px 12px 0px;
+}
+
+.testimonial-card .bottom{
+    padding-top: 6px;
+    border-top: solid 1px #CCC;
+}
+
+/* 
+
+    --- Testimonials ---
+
+*/
 
 @media only screen and (max-width: 967px){
     nav > ul{

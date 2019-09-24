@@ -30,5 +30,16 @@
         </div>
     </div>
 </section>
+<section class="indent-small">
+    <h2 class="text-center">Testimonials</h2>
+    <?php
+        require(dirname(__FILE__).'/components/testimonials.php');
+
+        $testimonials = new Testimonials;
+        $testimonials->showPreview = true;
+
+        $testimonials->Render();
+    ?>
+</section>
 <div class="footer-push"></div>
 <?php require_once(dirname(__FILE__).'/inc/footer.php'); ?>

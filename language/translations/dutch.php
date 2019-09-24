@@ -15,6 +15,7 @@
         'more-pictures' => "Meer foto's",
         'about-me' => "Over mij",
         'language' => "Taal",
+        'no-testimonials-found' => "Kon geen testimonials vinden",
 
         // Home page.
         'home-banner-welcome' => "Hey!, leuk om je te ontmoeten!",

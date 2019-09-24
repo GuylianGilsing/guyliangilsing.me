@@ -19,9 +19,9 @@
             <li <?php echo AddActiveClass($portfolioRoutes); ?>>
                 <a href="<?php echo RelativeURL('/projects'); ?>"><?php echo $_GET['translation']['projects']; ?></a>
             </li>
-            <!-- <li <?php //echo AddActiveClass(['/about']); ?>>
-                <a href="<?php //echo RelativeURL('/about'); ?>"><?php //echo $_GET['translation']['about']; ?></a>
-            </li> -->
+            <li <?php echo AddActiveClass(['/about']); ?>>
+                <a href="<?php echo RelativeURL('/about'); ?>"><?php echo $_GET['translation']['about']; ?></a>
+            </li>
             <li <?php echo AddActiveClass(['/contact']); ?>>
                 <a href="<?php echo RelativeURL('/contact'); ?>"><?php echo $_GET['translation']['contact']; ?></a>
             </li>

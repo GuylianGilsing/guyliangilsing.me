@@ -15,6 +15,7 @@
         'more-pictures' => "More pictures",
         'about-me' => "About me",
         'language' => "Language",
+        'no-testimonials-found' => "Could not find any testimonials",
 
         // Home page.
         'home-banner-welcome' => "Hi there, nice to meet you!",
