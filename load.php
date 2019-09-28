@@ -65,7 +65,7 @@
 
         // Show the 404 page.
         $contentLoader->registerCss([
-            '<link rel="stylesheet" href="http://cdn.guyliangilsing.me/frameworks/guylianize/skeleton/V1.1.0/guylianize.min.css">',
+            '<link rel="stylesheet" href="https://cdn.guyliangilsing.me/frameworks/guylianize/skeleton/V1.1.0/guylianize.min.css">',
             '<link rel="stylesheet" href="'.ServerBase().'/assets/css/global.css">',
         ]);
 
