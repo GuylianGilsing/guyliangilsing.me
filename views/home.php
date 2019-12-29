@@ -17,13 +17,13 @@
     <div class="clear-20"></div>
     <div class="project-row">
         <div class="project-card col-1-3 col-m-50 center col-s-100 col-xs-100">
-            <a href="<?php echo RelativeURL('/project/cryptomania'); ?>" class="project-wrapper">
+            <a href="<?php echo RelativeURL('/project/opengl-snake'); ?>" class="project-wrapper">
                 <div class="thumbnail">
-                    <h4 class="logo">Cryptomania</h4>
+                    <h4 class="logo">OpenGL Snake</h4>
                 </div>
                 <div class="info">
-                    <h6>Cryptomania</h6>
-                    <p><?php echo $_GET['translation']['cryptomania-shortdetails']; ?></p>
+                    <h6>OpenGL Snake</h6>
+                    <p><?php echo $_GET['translation']['opengl_snake-shortdetails']; ?></p>
                 </div>
             </a>
         </div>

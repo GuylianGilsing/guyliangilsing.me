@@ -19,7 +19,7 @@
 
         // Home page.
         'home-banner-welcome' => "Hey!, leuk om je te ontmoeten!",
-        'home-banner-welcome_sub' => "Mijn naam is Guylian Gilsing, ik ben een 18 jarige student die zich specialiseerd in fullstack web development.<br/><br/>Ik gebruik mijn kennis en skills om elk idee om te zetten in een practige applicatie of website.",
+        'home-banner-welcome_sub' => "Mijn naam is Guylian Gilsing, ik ben een 19 jarige student die zich specialiseerd in fullstack web development.<br/><br/>Ik gebruik mijn kennis en skills om elk idee om te zetten in een practige applicatie of website.",
 
         // Contact form.
         'contactform-title' => "Contact formulier",
@@ -46,6 +46,8 @@
         'eftelinfo-shortdetails' => "Simpele website met een custom framework en API.",
         'drakenvanger-shortdetails' => "Phaser.js web game voor wachtkamerscherm.",
         'mtunirepair-shortdetails' => "Tijdelijke homepage voor een nieuwe huisstijl",
+        'opengl_setup-shortdetails' => "OpenGL project template",
+        'opengl_snake-shortdetails' => "Snake gemaakt met OpenGL",
 
         // Cryptomania.
         'cryptomania-theproject' => "Cryptomania was een schoolopdracht voor het 2e leerjaar. In deze opdracht was het de bedoeling dat wij een website maakten die gebruik een API gebruikt. Onze leraar had ons een voorbeeld laten zien die gebruik maakt van de <a href='https://docs.coincap.io/?version=latest' target='_BLANK'>CoinCap 2.0 API</a>. Ik had de keuze gemaakt om dezelfde API te gebruiken om verwarring van de MoSCoW requirements te voorkomen.",
@@ -83,6 +85,10 @@
         // MT Unirepair.
         'mtunirepair-theproject' => "MT Unirepair was een opdracht die ik gemaakt heb voor <a href='https://influid.nl' target='_BLANK' class='txt-color-black'>Influid Creative Digital Agency</a>. Influid heeft mij het ontwerp aangeleverd voor een tijdelijke homepage, ik heb dit ontwerp gerealiseerd in HTML en CSS. Het eindresultaat is een volledige responsive webpagina, ook is PHP in de code verwerkt om de pagina tijdelijk te maken.",
         
+        // OpenGL Snake.
+        'opengl_snake-theproject' => "OpenGL Snake is een project dat ik heb gemaakt om te kijken hoe ver ik was in het leren van de OpenGL graphics API, hierdoor is de code niet optimaal.",
+        'opengl_snake-technologies' => "Deze game is volledig in C++ en OpenGL gemaakt samen met de GLFW, GLAD en GLM libraries.",
+
         'mail-success' => "E-mail is verzonden.",
         'mail-failed' => "E-mail kon niet verzonden worden, probeer het later nog eens.",
     ];

@@ -53,6 +53,28 @@
             </div>
         </a>
     </div>
+    <div class="project-card col-1-3 col-m-50 center col-s-100 col-xs-100">
+        <a href="<?php echo RelativeURL('/project/opengl-snake'); ?>" class="project-wrapper">
+            <div class="thumbnail">
+                <h4 class="logo">OpenGL Snake</h4>
+            </div>
+            <div class="info">
+                <h6>OpenGL Snake</h6>
+                <p><?php echo $_GET['translation']['opengl_snake-shortdetails']; ?></p>
+            </div>
+        </a>
+    </div>
+    <div class="project-card col-1-3 col-m-50 center col-s-100 col-xs-100">
+        <a href="https://github.com/GuylianGilsing/Visual-Studio-Code-OpenGL-Setup" class="project-wrapper">
+            <div class="thumbnail">
+                <h4 class="logo">OpenGL Template</h4>
+            </div>
+            <div class="info">
+                <h6>OpenGL Template</h6>
+                <p><?php echo $_GET['translation']['opengl_setup-shortdetails']; ?></p>
+            </div>
+        </a>
+    </div>
 </section>
 <div class="footer-push"></div>
 <?php require_once(dirname(__FILE__).'/inc/footer.php'); ?>

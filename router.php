@@ -124,6 +124,21 @@
                 ]
             ]
         ],
+        '/project/opengl-snake' => [
+            'view' => '/views/projects/opengl-snake.php',
+            'title' => "Guylian Gilsing - OpenGL Snake",
+            'content' => [
+                'css' => [
+                    '<link rel="stylesheet" href="https://cdn.guyliangilsing.me/frameworks/guylianize/skeleton/V1.1.0/guylianize.min.css" type="text/css">',
+                    '<link rel="stylesheet" href="'.ServerBase().'/assets/fonts/fontawesome/css/all.min.css" type="text/css">',
+                    '<link rel="stylesheet" href="'.ServerBase().'/assets/css/global.css" type="text/css">',
+                    '<link rel="stylesheet" href="'.ServerBase().'/assets/css/pages/projects.css" type="text/css">'
+                ],
+                'js' => [
+                    '<script src="'.ServerBase().'/assets/js/global.js"></script>'
+                ]
+            ]
+        ],
 
         // Preview routes.
         '/preview/project/mt-unirepair' => [

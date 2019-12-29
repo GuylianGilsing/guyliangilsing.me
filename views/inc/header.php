@@ -5,6 +5,7 @@
         '/project/drakenvanger',
         '/project/fluidify',
         '/project/mt-unirepair',
+        '/project/opengl-snake',
     ];
 ?>
 <header class="mainnav">

@@ -19,7 +19,7 @@
 
         // Home page.
         'home-banner-welcome' => "Hi there, nice to meet you!",
-        'home-banner-welcome_sub' => "My name is Guylian Gilsing, i'm a 18 year old student in application development where I specialize myself in fullstack web development.<br/><br/>I use my knowledge and skills to realize any idea into a beautiful app or website.",
+        'home-banner-welcome_sub' => "My name is Guylian Gilsing, i'm a 19 year old student in application development where I specialize myself in fullstack web development.<br/><br/>I use my knowledge and skills to realize any idea into a beautiful app or website.",
 
         // Contact form.
         'contactform-title' => "Contact form",
@@ -46,6 +46,8 @@
         'eftelinfo-shortdetails' => "Simple website using a custom framework and API.",
         'drakenvanger-shortdetails' => "Phaser.js web game for interactive screen.",
         'mtunirepair-shortdetails' => "Temporary homepage for a new brand identity.",
+        'opengl_setup-shortdetails' => "OpenGL project template",
+        'opengl_snake-shortdetails' => "Snake made with OpenGL",
 
         // Cryptomania
         'cryptomania-theproject' => "Cryptomania was a school assignment for my second semester. The assignment made us create a website that used an API. The teacher had an example website in which he used the <a href='https://docs.coincap.io/?version=latest' target='_BLANK'>CoinCap 2.0 API</a>. To avoid confusion of the MoSCoW requirements I chose to use the same API.",
@@ -83,6 +85,10 @@
         // MT Unirepair.
         'mtunirepair-theproject' => "MT Unirepair was a project I've made for <a href='https://influid.nl' target='_BLANK' class='txt-color-black'>Influid Creative Digital Agency</a>. Influid gave me a design that I needed to code in HTML and CSS. The end product also has some PHP code to make the page temporary.",
             
+        // OpenGL Snake.
+        'opengl_snake-theproject' => "OpenGL Snake was a project that I've made to check my progress on learning the OpenGL graphics API, because of this the code isn't that great.",
+        'opengl_snake-technologies' => "This game is completely made with C++ and OpenGL and utilizes the GLFW, GLAD en GLM libraries.",
+
         'mail-success' => "Mail has been sent.",
         'mail-failed' => "Mail could not be send, please try again later.",
     ];
