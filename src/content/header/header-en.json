@@ -1,0 +1,17 @@
+{
+    "logo_text": "Guylian Gilsing",
+    "links": [
+        {
+            "name": "Home",
+            "url": "/en"
+        },
+        {
+            "name": "Projects",
+            "url": "/en/projects"
+        },
+        {
+            "name": "About",
+            "url": "/en/about"
+        }
+    ]
+}

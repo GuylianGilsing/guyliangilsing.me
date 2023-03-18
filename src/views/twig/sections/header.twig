@@ -1,0 +1,38 @@
+<header id="main-header" class="z-50">
+    <div class="w-full fixed bg-white">
+        <div class="container mx-auto px-4 sm:px-0">
+            <div class="py-2 md:py-0 flex flex-row items-center justify-between">
+                <a href="/" class="block text-3xl font-semibold transition-colors hover:text-brand-primary">{{ header.logo_text }}</a>
+                <ul class="text-lg responsive-menu">
+                    {% for header_link in header.links %}
+                        <li class="inline-block">
+                            {% if url_is_active(header_link.url) %}
+                                <a href="{{ header_link.url }}" class="p-4 block font-semibold transition-colors text-brand-primary hover:text-brand-primary">{{ header_link.name }}</a>
+                            {% else %}
+                                <a href="{{ header_link.url }}" class="p-4 block font-semibold transition-colors hover:text-brand-primary">{{ header_link.name }}</a>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                    {# Dropdown #}
+                    <li class="dropdown relative inline-block">
+                        <div class="p-4 pr-0 block font-semibold transition-colors dropdown-icon">{{ language_switcher_language_name() }}</div>
+                        <ul class="top-full left-0 absolute dropdown__content text-lg bg-white">
+                            {% for language, url in language_switcher_languages() %}
+                                <li>
+                                    <a href="{{ url }}" class="px-4 py-2 block font-semibold transition-colors hover:text-brand-primary">{{ language }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+                <div id="main-header-hamburger" class="w-6 d-flex flex-col md:hidden cursor-pointer">
+                    <span class="w-full h-1 mb-1 block pointer-events-none bg-black"></span>
+                    <span class="w-full h-1 mb-1 block pointer-events-none bg-black"></span>
+                    <span class="w-full h-1 block pointer-events-none bg-black"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Push element below #}
+    <div class="h-[52px] md:h-[60px]"></div>
+</header>

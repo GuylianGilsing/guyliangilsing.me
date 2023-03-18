@@ -1,0 +1,26 @@
+{
+    "page_title": "About",
+
+    "about_hero_title": "About",
+
+    "about_me_title": "About me",
+    "about_me_paragraphs": [
+        "My name is Guylian Gilsing. I'm an enthousiastic student that has an interest in beautiful frontends and complex backend. In my spare time I usually can be found in a theme park, practicing card magic, watching a movie or tv show, or I'm programming."
+    ],
+
+    "my_knowledge_title": "My knowledge",
+    "my_knowledge_paragraphs": [
+        "Next to my proficiency of HTML5, CSS3, and basic Javascript, I'm also proficient with PHP and the Vue.js frontend framework. I am able to use Docker and Github Actions to create a basic CI/CD pipeline."
+    ],
+
+    "tech_stack_title": "Tech stack",
+    "tech_stack_images": {
+        "/assets/img/logos/logo-html5.svg": null,
+        "/assets/img/logos/logo-css3.svg": null,
+        "/assets/img/logos/logo-javascript.svg": null,
+        "/assets/img/logos/logo-php.svg": "https://www.php.net/",
+        "/assets/img/logos/logo-vue.svg": "https://vuejs.org/",
+        "/assets/img/logos/logo-tailwindcss.svg": "https://tailwindcss.com/",
+        "/assets/img/logos/logo-docker.svg": "https://www.docker.com/"
+    }
+}

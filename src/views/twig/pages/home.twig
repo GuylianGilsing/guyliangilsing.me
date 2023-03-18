@@ -1,0 +1,43 @@
+{% extends "/layouts/base.twig" %}
+
+{% block main_content %}
+<main id="main-content">
+    {% set hero_title = page.hero_title %}
+    {% set hero_subtitle = page.hero_subtitle %}
+    {% set hero_image = page.hero_image %}
+    {% include "/blocks/hero/text-and-selfie.twig" %}
+    <section>
+        <div class="py-6 md:py-10">
+            <div class="container mx-auto px-4 md:p-0">
+                <div class="flex flex-col-reverse md:flex-row gap-4">
+                    <div class="md:w-[50%]">
+                        <div class="text-2xl mb-2 font-semibold">{{ page.about_me_title }}</div>
+                        <p class="text-md">{{ page.about_me_content }}</p>
+                    </div>
+                    {% if page.contact_links|length > 0 %}
+                        <div class="md:w-[50%] flex flex-col md:items-end">
+                            <div class="text-2xl mb-2 font-semibold">{{ page.contact_title }}</div>
+                            <ul class="text-md md:text-right">
+                                {% for link in page.contact_links %}
+                                    <li class="mb-2">
+                                        <a href="{{ link.url }}" target="_BLANK" class="flex items-center gap-2 underline hover:text-brand-primary">
+                                            {{ link.name }}
+                                            <div class="img-wrapper img-wrapper--contain w-6 h-6">
+                                                <img src="{{ asset_url("/assets/img/icons/icon-#{ link.icon }.svg") }}" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% set projects_overview_title = page.projects_overview_title %}
+    {% set projects_overview_projects = page.projects_overview_projects %}
+    {% set projects_overview_button = page.projects_overview_button %}
+    {% include "/blocks/projects/short-overview-section.twig" %}
+</main>
+{% endblock %}

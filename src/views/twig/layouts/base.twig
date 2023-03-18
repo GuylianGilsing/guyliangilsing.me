@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.page_title }} | Guylian Gilsing</title>
+    <link rel="shortcut icon" href="{{ asset_url('/assets/img/favicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ asset_url('/assets/css/style.css') }}" type="text/css">
+    {% block css %}{% endblock %}
+    <script src="{{ asset_url('/assets/js/main.js') }}"></script>
+    {% block javascript_head %}{% endblock %}
+</head>
+<body>
+    {% include "/sections/header.twig" %}
+    {% block main_content %}{% endblock %}
+    {% include "/sections/footer.twig" %}
+    {% block javascript_body %}{% endblock %}
+</body>
+</html>

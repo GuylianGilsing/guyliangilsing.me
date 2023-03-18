@@ -1,0 +1,46 @@
+{% extends "/layouts/base.twig" %}
+
+{% block main_content %}
+<main id="main-content">
+    {% set hero_title = page.about_hero_title %}
+    {% include "/blocks/hero/text.twig" %}
+    <section>
+        <div class="py-6 md:py-10">
+            <div class="container mx-auto px-4 md:p-0">
+                <div class="pb-8 flex flex-col-reverse md:flex-row gap-4">
+                    <div class="md:w-[50%]">
+                        <div class="text-2xl mb-2 font-semibold">{{ page.about_me_title }}</div>
+                        {% for paragraph in page.about_me_paragraphs %}
+                            <p class="text-md">{{ paragraph }}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="md:w-[50%] flex flex-col md:items-end">
+                        <div class="text-2xl mb-2 font-semibold">{{ page.my_knowledge_title }}</div>
+                        {% for paragraph in page.my_knowledge_paragraphs %}
+                            <p class="text-md md:text-right">{{ paragraph }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl mb-6 font-semibold">Tech stack</div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {% for img_path, tech_url in page.tech_stack_images %}
+                            {% if tech_url|length > 0 %}
+                                <div class="img-wrapper img-wrapper--contain">
+                                    <a href="{{ tech_url }}" target="_BLANK">
+                                        <img src="{{ asset_url(img_path) }}" alt="">
+                                    </a>
+                                </div>
+                            {% else %}
+                                <div class="img-wrapper img-wrapper--contain">
+                                    <img src="{{ asset_url(img_path) }}" alt="">
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

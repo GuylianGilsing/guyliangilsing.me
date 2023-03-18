@@ -1,0 +1,53 @@
+{
+    "page_title": "Home",
+    
+    "hero_title": "Guylian Gilsing",
+    "hero_subtitle": "Software development student",
+    "hero_image": "/assets/img/selfies/selfie-guylian.jpg",
+
+    "about_me_title": "Over mij",
+    "about_me_content": "Mijn naam is Guylian. Ik ben een enthousiaste student met een interesse in prachtige frontends en complexe backends. In mijn vrije tijd ben ik te vinden in pretparken, zit ik thuis card magic te oefenen, ben ik een film of serie aan het kijken of ik ben aan het programmeren.",
+
+    "contact_title": "Contact",
+    "contact_links": [
+        {
+            "name": "github.com/GuylianGilsing",
+            "url": "https://github.com/GuylianGilsing",
+            "icon": "github-black"
+        },
+        {
+            "name": "gilsingguylian@gmail.com",
+            "url": "mailto:gilsingguylian@gmail.com",
+            "icon": "mail-black"
+        }
+    ],
+
+    "projects_overview_title": "Mijn projecten",
+    "projects_overview_projects": [
+        {
+            "title": "PHPValidation",
+            "tags": ["PHP", "Validation", "Library"],
+            "short_description": "Een composer package dat Laravel-achtige validatie mogelĳk maakt voor het valideren van arrays.",
+            "read_more_name": "Meer lezen",
+            "read_more_url": "https://github.com/GuylianGilsing/PHPValidation"
+        },
+        {
+            "title": "PHPClassMapper",
+            "tags": ["PHP", "Mapping", "Library"],
+            "short_description": "Een composer package waarmee objecten naar andere objecten en arrays vertaald kunnen worden.",
+            "read_more_name": "Meer lezen",
+            "read_more_url": "https://github.com/GuylianGilsing/PHPClassMapper"
+        },
+        {
+            "title": "PHPAbstractRouter",
+            "tags": ["PHP", "Routing", "Library"],
+            "short_description": "Een composer package dat een framework agnostische router aanbied.",
+            "read_more_name": "Meer lezen",
+            "read_more_url": "https://github.com/GuylianGilsing/PHPAbstractRouter"
+        }
+    ],
+    "projects_overview_button": {
+        "name": "Meer projecten",
+        "url": "/projects"
+    }
+}

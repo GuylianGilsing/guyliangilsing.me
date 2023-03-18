@@ -1,0 +1,10 @@
+# Files
+.gitignore
+app-config.example.php
+Dockerfile
+README.md
+
+# Folders
+.github
+vendor/
+node_modules/

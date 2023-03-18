@@ -1,0 +1,15 @@
+<section data-block="hero-text-and-selfie">
+    <div class="py-12 md:py-24 bg-brand-primary">
+        <div class="container mx-auto px-4 md:px-0 text-white">
+            <div class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-8 md:gap-24">
+                <div class="max-w-[48em] text-center lg:text-left">
+                    <div class="text-4xl lg:text-5xl mb-4 font-semibold">{{ hero_title }}</div>
+                    <p class="text-xl lg:text-2xl">{{ hero_subtitle }}</p>
+                </div>
+                <div class="max-w-[28em] max-h-[28em] md:w-[24em] md:h-[24em] px-8 md:p-0 overflow-hidden rounded-2xl">
+                    <img src="{{ asset_url(hero_image) }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

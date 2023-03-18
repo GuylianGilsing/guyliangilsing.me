@@ -1,0 +1,6 @@
+# Files
+app-config.php
+
+# Folders
+vendor/
+node_modules/

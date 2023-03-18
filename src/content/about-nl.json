@@ -1,0 +1,26 @@
+{
+    "page_title": "Over",
+
+    "about_hero_title": "Over",
+
+    "about_me_title": "Over mij",
+    "about_me_paragraphs": [
+        "Ik ben een enthousiaste student met een interesse in prachtige frontends en complexe backends. In mijn vrije tijd ben ik te vinden in pretparken, zit ik thuis card magic te oefenen, ben ik een film of serie aan het kijken of ik ben aan het programmeren."
+    ],
+
+    "my_knowledge_title": "Mijn kennis",
+    "my_knowledge_paragraphs": [
+        "Naast mijn kennis van HTML5, CSS3 en basis Javascript, ben ik ook bekend met PHP als backend-taal en Vue.js als frontend framework. Daarnaast kan ik Docker en Github Actions gebruiken om een simpele CI/CD pipeline op te zetten."
+    ],
+
+    "tech_stack_title": "Tech stack",
+    "tech_stack_images": {
+        "/assets/img/logos/logo-html5.svg": null,
+        "/assets/img/logos/logo-css3.svg": null,
+        "/assets/img/logos/logo-javascript.svg": null,
+        "/assets/img/logos/logo-php.svg": "https://www.php.net/",
+        "/assets/img/logos/logo-vue.svg": "https://vuejs.org/",
+        "/assets/img/logos/logo-tailwindcss.svg": "https://tailwindcss.com/",
+        "/assets/img/logos/logo-docker.svg": "https://www.docker.com/"
+    }
+}

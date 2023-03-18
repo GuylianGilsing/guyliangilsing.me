@@ -1,0 +1,53 @@
+{% extends "/layouts/base.twig" %}
+
+{% block main_content %}
+<main id="main-content">
+    {% set hero_title = page.hero_title %}
+    {% include "/blocks/hero/text.twig" %}
+    <section>
+        <div class="px-6 md:px-20 py-6 md:py-10">
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr_4fr] gap-12">
+                <form method="GET" action="{{ abs_url('/projects') }}">
+                    {# Search bar #}
+                    <div class="mb-6 relative">
+                        <input type="search" name="q" placeholder="{{ page.filter_search }}" id="projects-search" class="w-full py-2 px-4 border-2 border-gray-300 rounded-3xl" value="{{ search.query }}">
+                        <button type="submit" class="w-8 h-8 absolute right-2 top-[calc(50%-1em)] rounded-[50%] bg-brand-primary search-icon"></button>
+                    </div>
+                    {# Filters #}
+                    <div class="filter">
+                        <div class="filter__title px-4 py-2 cursor-pointer text-white font-semibold bg-brand-primary">Project tags</div>
+                        <div class="filter__content pt-4">
+                            {% for tag in project_tags_filter(page.projects) %}
+                                <div class="checkbox">
+                                    {% if search.tags and in_array(tag|lower, search.tags) %}
+                                        <input type="checkbox" name="tags[]" id="tag_{{ tag|lower }}" value="{{ tag|lower }}" checked>
+                                    {% else %}
+                                        <input type="checkbox" name="tags[]" id="tag_{{ tag|lower }}" value="{{ tag|lower }}">
+                                    {% endif %}
+                                    <label for="tag_{{ tag|lower }}" class="w-full text-base cursor-pointer">{{ tag }}</label>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="mt-6 flex flex-col gap-4 text-center">
+                            <button class="px-4 py-2 inline-block border-2 border-brand-primary transition-colors hover:text-white hover:bg-brand-primary">{{ page.filter_submit_button }}</button>
+                        {% if search|length > 0 %}
+                            <a href="{{ abs_url('/projects') }}" class="px-4 py-2 inline-block border-2 border-brand-primary transition-colors hover:text-white hover:bg-brand-primary">{{ page.filter_reset_button }}</a>
+                        {% endif %}
+                    </div>
+                </form>
+                {% set filtered_projects = filter_projects(page.projects) %}
+                {% if filtered_projects|length > 0 %}
+                    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 content-start">
+                        {% for project in filtered_projects %}
+                            {% include "/blocks/projects/project-card.twig" %}
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="flex flex-col justify-center items-center text-lg">No projects found</div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

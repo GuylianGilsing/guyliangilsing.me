@@ -1,0 +1,12 @@
+{% extends "/layouts/base.twig" %}
+
+{% block main_content %}
+<main id="main-content" class="flex flex-col">
+    <section class="flex flex-col flex-grow text-white bg-brand-primary">
+        <div class="p-8 flex flex-col flex-grow justify-center items-center">
+            <div class="text-8xl mb-4">{{ page.error_title }}</div>
+            <div class="text-2xl">{{ page.error_subtitle }}</div>
+        </div>
+    </section>
+</main>
+{% endblock %}
