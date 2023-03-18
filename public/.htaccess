@@ -1,3 +1,6 @@
+# Set $_SERVER['https'] to on when queried through the main website
+SetEnvIf Remote_Addr "NGINX_IP_ADDRESS" HTTPS=on
+
 # Redirects all incomming requests (and failed file paths) to the index.php file
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
