@@ -1,0 +1,4 @@
+Sitemap: https://guyliangilsing.me/sitemap.xml
+
+User-agent: *
+Disallow: /*/projects*?*

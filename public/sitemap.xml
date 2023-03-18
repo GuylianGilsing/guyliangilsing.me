@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://guyliangilsing.me/nl</loc>
+    <xhtml:link rel="canonical" hreflang="nl" href="https://guyliangilsing.me/nl" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyliangilsing.me/en" />
+    <lastmod>2023-03-18</lastmod>
+  </url>
+  <url>
+    <loc>https://guyliangilsing.me/nl/projects</loc>
+    <xhtml:link rel="canonical" hreflang="nl" href="https://guyliangilsing.me/nl/projects" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyliangilsing.me/en/projects" />
+    <lastmod>2023-03-18</lastmod>
+  </url>
+  <url>
+    <loc>https://guyliangilsing.me/nl/about</loc>
+    <xhtml:link rel="canonical" hreflang="nl" href="https://guyliangilsing.me/nl/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://guyliangilsing.me/en/about" />
+    <lastmod>2023-03-18</lastmod>
+  </url>
+</urlset>
