@@ -22,7 +22,7 @@ jobs:
         run: |
             export DOCKER_BUILDKIT=0
             export COMPOSE_DOCKER_CLI_BUILD=0
-            docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
+            docker build ./ -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
             docker push ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
       - name: "Update deployment"
         uses: 'appleboy/ssh-action@master'
