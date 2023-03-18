@@ -20,7 +20,7 @@
                             <ul class="text-md md:text-right">
                                 {% for link in page.contact_links %}
                                     <li class="mb-2">
-                                        <a href="{{ link.url }}" target="_BLANK" class="flex items-center gap-2 underline hover:text-brand-primary">
+                                        <a href="{{ link.url }}" target="_BLANK" class="flex flex-row-reverse justify-end md:flex-row items-center gap-2 underline hover:text-brand-primary">
                                             {{ link.name }}
                                             <div class="img-wrapper img-wrapper--contain w-6 h-6">
                                                 <img src="{{ asset_url("/assets/img/icons/icon-#{ link.icon }.svg") }}" alt="">
