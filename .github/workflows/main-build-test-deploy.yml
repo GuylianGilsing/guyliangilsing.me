@@ -1,0 +1,37 @@
+name: "Build, and deploy the main branche"
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      # Action setup
+      - name: "Go to this branche"
+        uses: 'actions/checkout@v2'
+      # Build docker image
+      - name: "Setup Docker Buildx"
+        uses: 'docker/setup-buildx-action@v1'
+      # Deploy image to dockerhub
+      - name: "Login to DockerHub"
+        uses: 'docker/login-action@v1'
+        with:
+            username: ${{ secrets.DOCKERHUB_USERNAME }}
+            password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      - name: "Build and push"
+        run: |
+            export DOCKER_BUILDKIT=0
+            export COMPOSE_DOCKER_CLI_BUILD=0
+            docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
+            docker push ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
+      - name: "Update deployment"
+        uses: 'appleboy/ssh-action@master'
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd /var/www/docker/projects/portfolio
+            docker-compose down
+            docker-compose pull
+            docker-compose up -d
