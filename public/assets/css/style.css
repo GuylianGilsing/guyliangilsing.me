@@ -724,10 +724,6 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -893,10 +889,6 @@ video {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -1135,7 +1127,7 @@ img {
     position: absolute;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
+    transition-duration: 250ms;
   }
 
   .responsive-menu::before {
@@ -1216,10 +1208,6 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:flex-row-reverse {
-    flex-direction: row-reverse;
-  }
-
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1261,10 +1249,6 @@ img {
 
   .md\:items-end {
     align-items: flex-end;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:justify-between {

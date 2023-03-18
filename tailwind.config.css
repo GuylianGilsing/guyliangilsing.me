@@ -141,6 +141,7 @@ img {
         left: 0;
         position: absolute;
         @apply transition-all;
+        transition-duration: 250ms;
     }
 
     .responsive-menu::before {
