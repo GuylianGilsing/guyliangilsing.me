@@ -7,7 +7,7 @@
     "filters": [
         {
             "name": "Project tags",
-            "options": ["PHP", "Library", "Validation", "Mapping", "Routing"]
+            "options": []
         }
     ],
     "filter_submit_button": "Filter",
@@ -15,11 +15,32 @@
 
     "projects": [
         {
+            "title": "Friend Finder",
+            "tags": ["PHP", "Micro services"],
+            "short_description": "A platform where people can find friends.",
+            "read_more_name": "Read more",
+            "read_more_url": "https://github.com/GuylianGilsing/FriendFinder"
+        },
+        {
             "title": "PHPValidation",
             "tags": ["PHP", "Validation", "Library"],
             "short_description": "A simple validation library that allows you to write custom, laravel-like, validators for your data.",
             "read_more_name": "Read more",
             "read_more_url": "https://github.com/GuylianGilsing/PHPValidation"
+        },
+        {
+            "title": "Use case architecture",
+            "tags": ["PHP", "Architecture"],
+            "short_description": "A PHP application architecture that divides all code over use cases.",
+            "read_more_name": "Read more",
+            "read_more_url": "https://github.com/GuylianGilsing/UseCaseArchitecture"
+        },
+        {
+            "title": "guyliangilsing.me",
+            "tags": ["PHP", "Website"],
+            "short_description": "My portfolio website.",
+            "read_more_name": "Read more",
+            "read_more_url": "https://github.com/GuylianGilsing/guyliangilsing.me"
         },
         {
             "title": "PHPClassMapper",
@@ -34,13 +55,6 @@
             "short_description": "A simple package that provides you with a framework agnostic router.",
             "read_more_name": "Read more",
             "read_more_url": "https://github.com/GuylianGilsing/PHPAbstractRouter"
-        },
-        {
-            "title": "guyliangilsing.me",
-            "tags": ["PHP", "Website"],
-            "short_description": "My portfolio website.",
-            "read_more_name": "Read more",
-            "read_more_url": "https://github.com/GuylianGilsing/guyliangilsing.me"
         }
     ]
 }

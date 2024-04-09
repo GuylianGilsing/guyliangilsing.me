@@ -25,6 +25,13 @@
     "projects_overview_title": "Mijn projecten",
     "projects_overview_projects": [
         {
+            "title": "Friend Finder",
+            "tags": ["PHP", "Micro services"],
+            "short_description": "Een platform waar mensen vrienden kunnen zoeken.",
+            "read_more_name": "Meer lezen",
+            "read_more_url": "https://github.com/GuylianGilsing/FriendFinder"
+        },
+        {
             "title": "PHPValidation",
             "tags": ["PHP", "Validation", "Library"],
             "short_description": "Een composer package dat Laravel-achtige validatie mogelĳk maakt voor het valideren van arrays.",
@@ -32,18 +39,11 @@
             "read_more_url": "https://github.com/GuylianGilsing/PHPValidation"
         },
         {
-            "title": "PHPClassMapper",
-            "tags": ["PHP", "Mapping", "Library"],
-            "short_description": "Een composer package waarmee objecten naar andere objecten en arrays vertaald kunnen worden.",
+            "title": "Use case architecture",
+            "tags": ["PHP", "Architecture"],
+            "short_description": "Een PHP applicatie architectuur die code verdeeld over use cases.",
             "read_more_name": "Meer lezen",
-            "read_more_url": "https://github.com/GuylianGilsing/PHPClassMapper"
-        },
-        {
-            "title": "PHPAbstractRouter",
-            "tags": ["PHP", "Routing", "Library"],
-            "short_description": "Een composer package dat een framework agnostische router aanbied.",
-            "read_more_name": "Meer lezen",
-            "read_more_url": "https://github.com/GuylianGilsing/PHPAbstractRouter"
+            "read_more_url": "https://github.com/GuylianGilsing/UseCaseArchitecture"
         }
     ],
     "projects_overview_button": {
