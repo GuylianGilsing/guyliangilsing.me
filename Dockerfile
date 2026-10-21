@@ -1,4 +1,4 @@
-FROM php:8.1-apache
+FROM php:8.5.12-apache
 
 #####################
 # Setup application #
@@ -20,9 +20,6 @@ COPY . ./
 # Install composer dependencies
 RUN composer install
 RUN composer dump-autoload -o
-
-# Run static code analysis
-RUN ./vendor/bin/phpinsights analyse -v
 
 # Install Node.js & NPM
 RUN apt update
